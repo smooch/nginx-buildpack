@@ -38,7 +38,7 @@ echo "Downloading $headers_more_nginx_module_url"
 (
 	cd nginx-${NGINX_VERSION}
 	./configure \
-		--with-http_realip_module
+		--with-http_realip_module \
 		--with-http_sub_module \
 		--with-pcre=pcre-${PCRE_VERSION} \
 		--prefix=/tmp/nginx \
