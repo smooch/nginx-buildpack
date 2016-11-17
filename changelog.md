@@ -1,3 +1,11 @@
+## v0.5
+
+2016-11-16
+
+Update NGINX
+
+* NGINX 1.11.6 (Current mainline version)
+
 ## v0.4
 
 2012-05-13

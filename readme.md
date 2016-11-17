@@ -9,7 +9,7 @@ Some application servers (e.g. Ruby's Unicorn) halt progress when dealing with n
 ## Versions
 
 * Buildpack Version: 0.4
-* NGINX Version: 1.5.7
+* NGINX Version: 1.11.6
 
 ## Requirements
 
@@ -166,6 +166,12 @@ Visit App
 ```
 $ heroku open
 ```
+
+
+## Rebuild it
+
+Apply your changes, then `make build` 
+
 
 ## License
 Copyright (c) 2013 Ryan R. Smith

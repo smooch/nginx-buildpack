@@ -9,9 +9,10 @@
 # Once the dyno has is 'up' you can open your browser and navigate
 # this dyno's directory structure to download the nginx binary.
 
-NGINX_VERSION=${NGINX_VERSION-1.5.7}
-PCRE_VERSION=${PCRE_VERSION-8.21}
-HEADERS_MORE_VERSION=${HEADERS_MORE_VERSION-0.23}
+# Latest stable & mainline versions, as of Nov 17th, 2016: stable: 1.10.2  mainline: 1.11.6
+NGINX_VERSION=${NGINX_VERSION-1.11.6}
+PCRE_VERSION=${PCRE_VERSION-8.39}
+HEADERS_MORE_VERSION=${HEADERS_MORE_VERSION-0.32}
 
 nginx_tarball_url=http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz
 pcre_tarball_url=http://ftp.exim.llorien.org/pcre/pcre-${PCRE_VERSION}.tar.bz2
@@ -46,8 +47,4 @@ echo "Downloading $headers_more_nginx_module_url"
 	make install
 )
 
-while true
-do
-	sleep 1
-	echo "."
-done
+cp /tmp/nginx/sbin/nginx $1
