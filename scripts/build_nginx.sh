@@ -42,6 +42,7 @@ echo "Downloading $headers_more_nginx_module_url"
 		--with-http_realip_module \
 		--with-http_sub_module \
 		--with-pcre=pcre-${PCRE_VERSION} \
+		--with-http_stub_status_module \
 		--prefix=/tmp/nginx \
 		--add-module=/${temp_dir}/nginx-${NGINX_VERSION}/headers-more-nginx-module-${HEADERS_MORE_VERSION}
 	make install
